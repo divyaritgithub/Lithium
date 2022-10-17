@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();///test-you
 
-const xyz = require('./logger')
+const xyz = require('../logger/logger')
 const qwa = require('../util/helper')
-const edc = require('../util/validator')
+const edc = require('../validator//formatter')
 
 const underscore = require('underscore')
 var _ = require('lodash');
@@ -33,7 +33,7 @@ const pair=[['horror','The Shining'],['drama','Titanic'],['thriller','Shutter Is
 console.log(_.fromPairs(pair));
     
     
-    res.send('My first ever api!')
+    res.send('My First Ever Api!')
 
    
 });
